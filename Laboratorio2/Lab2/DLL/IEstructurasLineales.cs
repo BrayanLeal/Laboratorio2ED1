@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibreriaEstructuras
+namespace DLL
 {
-    public class Class1
+    interface IEstructurasLineales<T>
     {
+        void Agregar(T Tinformacion);
+        
+
     }
 }

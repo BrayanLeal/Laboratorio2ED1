@@ -3,30 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Lab2.Models;
+using Lab2.Informacion;
 
-namespace Laboratorio2.Controllers
+namespace Lab2.Controllers
 {
-    public class PedidosController : Controller
+    public class cCargarArchivoController : Controller
     {
-        // GET: Pedidos
+        // GET: cCargarArchivo
         public ActionResult Index()
         {
+            ViewBag.MostrarEnLavista = "Cargando Informacíon del Archivo de texto";
             return View();
         }
 
-        // GET: Pedidos/Details/5
+        // GET: cCargarArchivo/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: Pedidos/Create
+        // GET: cCargarArchivo/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Pedidos/Create
+        // POST: cCargarArchivo/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
@@ -42,13 +45,13 @@ namespace Laboratorio2.Controllers
             }
         }
 
-        // GET: Pedidos/Edit/5
+        // GET: cCargarArchivo/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: Pedidos/Edit/5
+        // POST: cCargarArchivo/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -64,13 +67,13 @@ namespace Laboratorio2.Controllers
             }
         }
 
-        // GET: Pedidos/Delete/5
+        // GET: cCargarArchivo/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: Pedidos/Delete/5
+        // POST: cCargarArchivo/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {
